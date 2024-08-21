@@ -1,20 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <body>
+        <div class="v1_2">
+          <div class="rectangle_blue"><img src="../../assets/v1496_732.png"></div>
+          <div class="rectangle_white"></div>
+          <div class="v5_7">
+            <ion-item>
+              <ion-label></ion-label>
+              <ion-input  placeholder="email"></ion-input>
+            </ion-item>
+          </div>
+          <div class="v5_8">
+            <ion-item>
+              <ion-label></ion-label>
+              <ion-input type="password" placeholder="password"></ion-input>
+            </ion-item>
+          </div>
+          <ion-button class="login" routerLink="/select" color="secondary">
+            <span class="v5_11">log in</span> 
+          </ion-button> 
+          
+          
+          
+          <ion-button (click)="signIn()" color="light" class="v5_17"></ion-button>
+          <div class="v5_22">  
+            <ion-img src="../../assets/v5_22.png" (click)="signIn()"></ion-img> 
+            
+          </div>---
+          <ion-text class="v7_24" (click)="signIn()">Sign up with Google</ion-text>
+          <ion-button routerLink="/pay-gcash"> temp button 4 2day </ion-button>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+
